@@ -26,6 +26,62 @@
 
     grid-column: 1 / 2;
     grid-row: span 5;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    padding: 20px;
+}
+
+#logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+#logo img {
+    height: 60px;
+}
+
+#logo .text {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.sideButton {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+
+    text-decoration: none;
+}
+
+
+.sideButton .text {
+    color: white;
+    font-size: 20px;
+    transition: all .1s ease-in-out;
+}
+
+.sideButton .text:hover {
+    border-bottom: 2px solid white;
+}
+
+.icon {
+    height: 25px;
+    width: 25px;
+}
+
+.sideButtonContainer {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 30px;
+    padding-left: 15px;
+    padding-bottom: 30px;
 }
 
 #header {
