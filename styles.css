@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+    box-sizing: border-box;
+    --mainColor: #a7f3d0;
+    --headerColor: #d1fae5;
+    --sidebarColor: #10b981;
+}
+
+.text {
+    font-family: 'Lato', sans-serif;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: minmax(250px, 1fr) 4fr;
+    grid-template-rows: 1fr 5fr;
+    height: 100vh;
+    width: 100vw;
+
+    background-color: var(--mainColor);
+}
+
+#sidebar {
+    background-color: var(--sidebarColor);    ;
+
+    grid-column: 1 / 2;
+    grid-row: span 5;
+}
+
+#header {
+    background-color: var(--headerColor);
+
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    border-radius: 0 0 5px 5px;
+
+}
+
+#main {
+    background-color: var(--mainColor);
+    
+
+
+}
