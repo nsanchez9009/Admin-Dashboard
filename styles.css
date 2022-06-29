@@ -222,6 +222,111 @@
     #main {
         background-color: var(--mainColor);
         
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 30px;
 
-
+        padding: 40px 30px;
     }
+        
+        #main .text {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #projects {
+            display: flex;
+            flex-direction: column;
+            flex: auto;
+            gap: 10px;
+
+            grid-column: 1 / 2;
+            grid-row: 1 / 3;
+        }
+
+            #cards {
+                height: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                gap: 30px;
+            }
+                #cards .text {
+                    font-size: 18px;
+                }
+
+                #cards .subtext {
+                    font-size: 16px;
+                    font-weight: normal;
+                    color: #064e3b;
+                }
+
+                .card {
+                    background-color: var(--headerColor);
+                    border-left: 8px solid var(--sidebarColor);
+                    border-radius: 10px;
+                    padding: 30px 20px;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                }
+                    .cardText {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 8px;
+                    }
+
+                    .cardButtons {
+                        display: flex;
+                        justify-content: flex-end;
+                        gap: 20px;
+                    }
+
+                        .favorite {    
+                            opacity: 80%;                      
+                            background-image: url(./media/star-outline.png);
+                            background-position: center;
+                            background-size: cover;
+                        }
+
+                            .favorite:hover {
+                                opacity: 100%;
+                            }
+
+                            .favoriteClicked {
+                                background-image: url(./media/star-clicked.png);
+                            }
+
+                        .watch {
+                            opacity: 80%;
+                            background-image: url(./media/watch.png);
+                            background-position: center;
+                            background-size: cover;
+                        }
+
+                            .watch:hover {
+                                opacity: 100%;
+                            }
+
+                            .watchClicked {
+                                background-image: url(./media/watch-clicked.png);
+                            }
+
+                        .fork {
+                            opacity: 80%;
+                            background-image: url(./media/fork.png);
+                            background-position: center;
+                            background-size: cover;
+                        }
+
+                            .fork:hover {
+                                opacity: 100%;
+                            }
+
+
+
+                

@@ -7,6 +7,7 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./normalize.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <div id="container">
@@ -78,7 +79,7 @@
                     <img src="./media/pfp.jpg" alt="Profile Picture" class="pfp">
                     <div class="text">
                         <div style="font-size: 13px;">Hello,</div>
-                        <div style="font-size: 20px;">Nicolas Sanchez (@nsanchez9009)</div>
+                        <div style="font-size: 25px;">Nicolas Sanchez (@nsanchez9009)</div>
                     </div>
                 </div>
                 <div id="buttons">
@@ -90,7 +91,51 @@
         </div>
     
         <div id="main">
-            
+            <div id="projects">
+                <div class="text">Your Projects</div>
+                
+                <div id="cards">
+                    <div class="card">
+                        <div class="cardText">
+                            <div class="text">Guide Bot</div>
+                            <div class="text subtext">A discord bot built with the hikari python api and lightbulb command handler.</div>
+                        </div>
+
+                        <div class="cardButtons">
+                            <div class="favorite icon"></div>
+                            <div class="watch icon"></div>
+                            <a href="https://github.com/nsanchez9009/Guide-bot" class="fork icon"></a>
+                        </div>
+                
+                    </div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                </div>
+            </div>
+
+            <div id="announcements">
+                <div class="text">Announcements</div>
+
+                <div id="messages">
+                    <div class="message"></div>
+                    <div class="message"></div>
+                    <div class="message"></div>
+                </div>
+            </div>
+
+            <div id="trending">
+                <div class="text">Trending</div>
+
+                <div id="users">
+                    <div class="user"></div>
+                    <div class="user"></div>
+                    <div class="user"></div>
+                    <div class="user"></div>
+                </div>
+            </div>
         </div>
     </div>
 
