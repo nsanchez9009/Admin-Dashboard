@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 :root {
-    box-sizing: border-box;
     --mainColor: #a7f3d0;
     --headerColor: #d1fae5;
     --sidebarColor: #10b981;
+    --subtextColor: #064e3b;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 .text {
@@ -17,6 +21,7 @@
     grid-template-rows: 1fr 5fr;
     height: 100vh;
     width: 100vw;
+    min-width: 1194px;
 
     background-color: var(--mainColor);
 }
@@ -226,7 +231,6 @@
         grid-template-columns: 3fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 30px;
-
         padding: 40px 30px;
     }
         
@@ -259,12 +263,13 @@
                 #cards .subtext {
                     font-size: 16px;
                     font-weight: normal;
-                    color: #064e3b;
+                    color: var(--subtextColor);
                 }
 
                 .card {
                     background-color: var(--headerColor);
                     border-left: 8px solid var(--sidebarColor);
+                    filter: drop-shadow(0 4px 2px #97dabb);
                     border-radius: 10px;
                     padding: 30px 20px;
 
@@ -328,6 +333,98 @@
                             .fork:hover {
                                 opacity: 100%;
                             }
+        
+        #announcements {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+            #messages {
+                background-color: var(--headerColor);
+                filter: drop-shadow(0 4px 2px #97dabb);
+
+                display: grid;
+                grid-template-rows: repeat(3, minmax(0, 1fr));
+
+                padding: 10px 30px;
+                border-radius: 10px;
+                height: 100%;
+                width: 100%;
+            }
+            
+                .message {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    border-bottom: 1px solid var(--mainColor);
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    gap: 4px;
+                }
+
+                #messages .text {
+                    font-size: 14px;
+                }
+
+                #messages .subtext {
+                    color: var(--subtextColor);
+                    font-size: 13px;
+                    font-weight: normal;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+        
+        #trending {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+            #users {
+                background-color: var(--headerColor);
+                filter: drop-shadow(0 4px 2px #97dabb);
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                border-radius: 10px;
+                height: 100%;
+                width: 100%;
+                padding: 20px;
+            }
+
+                .user {
+                    display: flex;
+                    gap: 20px;
+                }
+
+                    #users .pfp {
+                        border-radius: 50%;
+                        height: 40px;
+                    }
+
+                    .userInfo {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        gap: 3px;
+                    }
+
+                        #users .text {
+                            font-size: 14px;
+                        }
+
+                        #users .subtext {
+                            font-weight: normal;
+                            color: var(--subtextColor);
+                        }
+
 
 
 
