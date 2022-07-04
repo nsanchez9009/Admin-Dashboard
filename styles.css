@@ -299,6 +299,7 @@
 
                             .favoriteClicked {
                                 background-image: url(./media/star-clicked.png);
+                                opacity: 100%;
                             }
 
                         .watch {
@@ -314,6 +315,7 @@
 
                             .watchClicked {
                                 background-image: url(./media/watch-clicked.png);
+                                opacity: 100%;
                             }
 
                         .fork {

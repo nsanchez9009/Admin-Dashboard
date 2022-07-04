@@ -2,6 +2,7 @@ const favoriteButtons = document.querySelectorAll(".favorite")
 const watchButtons = document.querySelectorAll(".watch")
 
 let favClicked = false;
+let watchClicked = false;
 
 favoriteButtons.forEach(button => button.addEventListener("click", () => {
     if (favClicked === false) {
@@ -14,3 +15,15 @@ favoriteButtons.forEach(button => button.addEventListener("click", () => {
         favClicked = false;
     }
 }));
+
+watchButtons.forEach(button => button.addEventListener("click", () => {
+    if (watchClicked === false) {
+        button.classList.add("watchClicked");
+        watchClicked = true;
+    }
+
+    else if (watchClicked === true) {
+        button.classList.remove("watchClicked");
+        watchClicked = false;
+    }
+}))
